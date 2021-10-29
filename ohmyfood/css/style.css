@@ -9,253 +9,254 @@
   /*font-family: 'Roboto', sans-serif;*/
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4vw auto;
-  width: 48%;
-}
-.header__search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: gray;
-  box-shadow: 0vw 0vw 1vw grey;
-}
-.header__search--area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 55%;
-}
-.header__search i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  height: 12.5vw;
-  font-size: 4.2vw;
-}
-.header__search--input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 12.5vw;
-  border: none;
-  outline: none;
-  background-color: gray;
-}
-.header__search--input::placeholder {
-  display: flex;
-  align-items: center;
-  color: black;
-  font-size: 4.2vw;
-}
-.header__exploration {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: gainsboro;
-  padding-top: 11vw;
-  padding-bottom: 14vw;
-}
-.header__exploration h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 6.5vw;
-  width: 67%;
-  font-style: bold;
-  margin-bottom: 4vw;
-}
-.header__exploration p {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 4.5vw;
-  width: 82%;
-  color: grey;
-  margin-bottom: 9vw;
-}
-.header__exploration a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-style: bold;
-  border-radius: 10vw;
-  background-color: #FF79DA;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 4.5vw;
-  padding: 4vw;
-}
+@media all and (max-width: 540px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw auto;
+    width: 48%;
+  }
+  .header__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: gray;
+    box-shadow: 0vw 0vw 1vw grey;
+  }
+  .header__search--area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+  }
+  .header__search i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 12.5vw;
+    font-size: 4.2vw;
+  }
+  .header__search--input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 12.5vw;
+    border: none;
+    outline: none;
+    background-color: gray;
+  }
+  .header__search--input::placeholder {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 4.2vw;
+  }
+  .header__exploration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding-top: 11vw;
+    padding-bottom: 14vw;
+  }
+  .header__exploration h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.5vw;
+    width: 67%;
+    font-style: bold;
+    margin-bottom: 4vw;
+  }
+  .header__exploration p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4.5vw;
+    width: 82%;
+    color: grey;
+    margin-bottom: 9vw;
+  }
+  .header__exploration a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: bold;
+    border-radius: 10vw;
+    background-color: #FF79DA;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 4.5vw;
+    padding: 4vw;
+  }
 
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 12vw;
-  padding-bottom: 14.5vw;
-  width: 100%;
-}
-.fonctionnement h1 {
-  font-size: 6.5vw;
-  font-style: bold;
-  padding-left: 5vw;
-  margin-bottom: 5vw;
-  width: 100%;
-}
-.fonctionnement__menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 92%;
-}
-.fonctionnement__menu a {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: gainsboro;
-  margin-bottom: 4.5vw;
-  height: 19vw;
-  font-size: 4.5vw;
-  font-style: bold;
-  border-radius: 8vw;
-  box-shadow: 0vw 0vw 1vw #9356DC;
-  text-decoration: none;
-}
-.fonctionnement__menu a i {
-  display: flex;
-  align-items: center;
-  font-size: 5.8vw;
-  color: black;
-  padding-left: 10vw;
-  padding-right: 7vw;
-  height: 100%;
-}
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vw;
+    padding-bottom: 14.5vw;
+    width: 100%;
+  }
+  .fonctionnement h1 {
+    font-size: 6.5vw;
+    font-style: bold;
+    padding-left: 5vw;
+    margin-bottom: 5vw;
+    width: 100%;
+  }
+  .fonctionnement__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+  }
+  .fonctionnement__menu a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: gainsboro;
+    margin-bottom: 4.5vw;
+    height: 19vw;
+    font-size: 4.5vw;
+    font-style: bold;
+    border-radius: 8vw;
+    box-shadow: 0vw 0vw 1vw #9356DC;
+    text-decoration: none;
+  }
+  .fonctionnement__menu a i {
+    display: flex;
+    align-items: center;
+    font-size: 5.8vw;
+    color: black;
+    padding-left: 10vw;
+    padding-right: 7vw;
+    height: 100%;
+  }
 
-.restaurants {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-top: 14.5vw;
-  padding-bottom: 12.5vw;
-  background-color: gainsboro;
-}
-.restaurants h1 {
-  width: 100%;
-  padding-left: 5vw;
-  font-size: 6.5vw;
-  font-style: bold;
-  margin-bottom: 5vw;
-}
-.restaurants__presentation {
-  display: flex;
-  flex-direction: column;
-  width: 92%;
-  height: 280vw;
-}
-.restaurants__presentation--topic {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 65vw;
-  border-radius: 5vw;
-  margin-bottom: 5vw;
-  text-decoration: none;
-}
-.restaurants__presentation--topic.new::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  content: "Nouveau";
-  padding: 1.5vw 2.5vw;
-  border-radius: 1vw;
-  position: absolute;
-  background-color: green;
-  color: white;
-  width: 18%;
-  height: 5vw;
-  left: 70%;
-  margin-top: 3.5vw;
-  font-size: 4vw;
-}
-.restaurants__presentation--topic img {
-  display: flex;
-  width: 100%;
-  height: 70%;
-  border-radius: 5vw 5vw 0vw 0vw;
-  object-fit: cover;
-}
-.restaurants__presentation--topic--bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 3.5vw;
-  padding-right: 5.5vw;
-  background-color: white;
-  border-radius: 0vw 0vw 5vw 5vw;
-  height: 30%;
-}
-.restaurants__presentation--topic--bottom div h2 {
-  font-size: 6vw;
-  margin-bottom: 1vw;
-  color: black;
-}
-.restaurants__presentation--topic--bottom div p {
-  font-size: 5vw;
-  color: gray;
-}
-.restaurants__presentation--topic--bottom i {
-  font-size: 6vw;
-  background: white;
-}
-.restaurants__presentation--topic--bottom i:hover {
-  color: #9356DC;
-}
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 14.5vw;
+    padding-bottom: 12.5vw;
+    background-color: gainsboro;
+  }
+  .restaurants h1 {
+    width: 100%;
+    padding-left: 5vw;
+    font-size: 6.5vw;
+    font-style: bold;
+    margin-bottom: 5vw;
+  }
+  .restaurants__presentation {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 280vw;
+  }
+  .restaurants__presentation--topic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65vw;
+    border-radius: 5vw;
+    margin-bottom: 5vw;
+    text-decoration: none;
+  }
+  .restaurants__presentation--topic.new::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Nouveau";
+    padding: 1.5vw 2.5vw;
+    border-radius: 1vw;
+    position: absolute;
+    background-color: green;
+    color: white;
+    width: 18%;
+    height: 5vw;
+    left: 70%;
+    margin-top: 3.5vw;
+    font-size: 4vw;
+  }
+  .restaurants__presentation--topic img {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    border-radius: 5vw 5vw 0vw 0vw;
+    object-fit: cover;
+  }
+  .restaurants__presentation--topic--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.5vw;
+    padding-right: 5.5vw;
+    background-color: white;
+    border-radius: 0vw 0vw 5vw 5vw;
+    height: 30%;
+  }
+  .restaurants__presentation--topic--bottom div h2 {
+    font-size: 6vw;
+    margin-bottom: 1vw;
+    color: black;
+  }
+  .restaurants__presentation--topic--bottom div p {
+    font-size: 5vw;
+    color: gray;
+  }
+  .restaurants__presentation--topic--bottom i {
+    font-size: 6vw;
+    background: white;
+  }
+  .restaurants__presentation--topic--bottom i:hover {
+    color: #9356DC;
+  }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #000000;
-  padding: 5vw 5vw;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000000;
+    padding: 5vw 5vw;
+  }
+  .footer h1 {
+    color: white;
+    font-size: 5.5vw;
+    margin-bottom: 5vw;
+    font-family: "Shrikhand", sans-serif;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+  }
+  .footer__list--link {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2vw;
+    font-size: 4.5vw;
+  }
+  .footer__list--link i {
+    padding-right: 3vw;
+  }
 }
-.footer h1 {
-  color: white;
-  font-size: 5.5vw;
-  margin-bottom: 5vw;
-  font-family: "Shrikhand", sans-serif;
-}
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  width: 92%;
-}
-.footer__list--link {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 2vw;
-  font-size: 4.5vw;
-}
-.footer__list--link i {
-  padding-right: 3vw;
-}
-
-@media all and (max-width: 1024px) and (min-width: 540px) {
+@media all and (max-width: 1024px) and (min-width: 540px) and (orientation: portrait) {
   .header {
     display: flex;
     flex-direction: column;
@@ -518,7 +519,7 @@
     font-size: 1.8vw;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px) and (orientation: landscape) {
   .header {
     display: flex;
     flex-direction: column;
