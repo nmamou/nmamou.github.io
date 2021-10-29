@@ -996,7 +996,7 @@ html {
     font-size: 2vw;
   }
 }
-@media all and (min-width: 1025px) and (orientation: landscape) {
+@media all and (min-width: 1026px) and (orientation: landscape) {
   .header {
     display: flex;
     flex-direction: column;
