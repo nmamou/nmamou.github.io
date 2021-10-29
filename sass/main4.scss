@@ -1,0 +1,267 @@
+/*link to google fonts used*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+$border-topic: 5vw;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vw auto;
+        width: 48%;
+    }
+    &__search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: gray;
+        box-shadow: 0vw 0vw 1vw  grey;
+        &--area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55%;
+        }
+        & i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 12.5vw;
+            font-size: 4.2vw;
+        }
+        &--input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 12.5vw;
+            border: none;
+            outline: none;
+            background-color: gray;
+            &::placeholder{
+                display: flex;
+                align-items: center;
+                color: black;
+                font-size: 4.2vw;
+            }
+        }
+    }
+
+    &__exploration{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        padding-top: 11vw;
+        padding-bottom: 14vw;
+        & h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 6.5vw;
+            width: 67%;
+            font-style: bold;
+            margin-bottom: 4vw;
+        }
+        & p{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 4.5vw;
+            width: 82%;
+            color: grey;
+            margin-bottom: 9vw;
+        }
+        & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-style: bold;
+            border-radius: 10vw;
+            background-color: $color-secondary;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 4.5vw;
+            padding: 4vw;
+        }
+    }
+}
+
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vw;
+    padding-bottom: 14.5vw;
+    width: 100%;
+    & h1{
+        font-size: 6.5vw;
+        font-style: bold;
+        padding-left: 5vw;
+        margin-bottom: 5vw;
+        width: 100%;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 92%;
+        & a{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: gainsboro;
+            margin-bottom: 4.5vw;
+            height: 19vw;
+            font-size: 4.5vw;
+            font-style: bold;
+            border-radius: 8vw;
+            box-shadow: 0vw 0vw 1vw $color-primary;
+            text-decoration: none;
+            & i{
+                display: flex;
+                align-items: center;
+                font-size: 5.8vw;
+                color: black;
+                padding-left: 10vw;
+                padding-right: 7vw;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 14.5vw;
+    padding-bottom: 12.5vw;
+    background-color: gainsboro;
+    & h1{
+        width: 100%;
+        padding-left: 5vw;
+        font-size: 6.5vw;
+        font-style: bold;
+        margin-bottom: 5vw;
+    }
+    &__presentation{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        height: 280vw;
+
+        
+        &--topic{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 65vw;
+            border-radius: $border-topic;
+            margin-bottom: 5vw;
+            &.new::before{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                content: "Nouveau";
+                padding: 1.5vw 2.5vw;
+                border-radius: 1vw;
+                position: absolute;
+                background-color: green;
+                color: white;
+                width: 18%;
+                height: 5vw;
+                left: 70%;
+                margin-top: 3.5vw;
+                font-size: 4vw;
+            }
+            & img{
+                display: flex;
+                width: 100%;
+                height: 70%;
+                border-radius: $border-topic $border-topic 0vw 0vw;
+            }
+            &--bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 3.5vw;
+                padding-right: 5.5vw;
+                background-color: white;
+                border-radius: 0vw 0vw $border-topic $border-topic;
+                height: 30%;
+                & div{
+                    & h2{
+                        font-size: 6vw;
+                        margin-bottom: 1vw;
+                    }
+                    & p{
+                        font-size: 5vw;
+                        color: gray;
+                    }
+                }
+                & i{
+                    font-size: 6vw;
+                    background: white;
+                }
+                & i:hover{
+                    color: $color-primary;
+                    
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000000;
+    padding: 5vw 5vw;
+    
+    & h1{
+        color: white;
+        font-size: 5.5vw;
+        margin-bottom: 5vw;
+        font-family: 'Shrikhand', sans-serif;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        &--link{
+            text-decoration: none;
+            color: white;
+            margin-bottom: 2vw;
+            font-size: 4.5vw;
+            & i{
+                padding-right: 3vw;
+            }
+        }
+    }
+}
