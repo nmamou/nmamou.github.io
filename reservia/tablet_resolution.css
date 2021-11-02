@@ -26,7 +26,6 @@ header{
     margin: 0 auto;
     width: 93%;
     margin-bottom: 2vw;
-    border: 0px solid black;
 }
 nav{
     width: 100%;
@@ -48,26 +47,26 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: var(--blue-reservia);
-    font-size: 1.3vw;
+    font-size: 1.7vw;
     font-weight: bold;
 }
 nav ul li a:hover{
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     color: white;
     background-color: var(--blue-reservia);
 }
 nav img{
     display: flex;
-    width: 9%;
+    width: 11%;
 }
 
 header h1{
     display: inline-flex;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 header p{
     display: inline-flex;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 /*The Search menu box styling:
@@ -91,7 +90,7 @@ It is decomposed to the three follwing rows:
     border-radius: 1vw;
     box-shadow: 0 0 0.3vw grey;
     width: 40%;
-    height: 2.8vw;
+    height: 3.5vw;
 }
 
 .filter{
@@ -105,7 +104,7 @@ It is decomposed to the three follwing rows:
     display: flex;
     align-items: center;
     width: 100%;
-    font-size: 1vw;
+    font-size: 1.3vw;
  }
  
  /******The bottom text styling******/
@@ -116,8 +115,8 @@ It is decomposed to the three follwing rows:
     color: #0065FC;
     background-color: white;
     margin-right: 0.5vw;
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 1.5vw;
+    height: 1.5vw;
     border-radius: 50%;
     box-shadow: 0 0 0.2vw grey;
 }
@@ -132,12 +131,12 @@ are styled here
     align-items: center;
     background: grey;
     border-radius: 0.5vw 0 0 0.5vw;
-    padding: 0 1.2vw;
-    font-size: 1.2vw;
+    padding: 0 1.3vw;
+    font-size: 1.3vw;
     height: 100%;
 }
 .fas-search:hover{
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     color:  var(--blue-reservia);
     
 }
@@ -164,7 +163,7 @@ are styled here
 
 .search-field::placeholder{
     color: black;
-    font-size: 1.35vw;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -177,11 +176,11 @@ are styled here
     background:var(--blue-reservia);
     height: 100%;
     border-radius: 0 0.5vw 0.5vw 0;
-    font-size: 1.35vw;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 .submit-button:hover{
-    font-size: 1.45vw;
+    font-size: 1.5vw;
     box-shadow: 0 0 0.3vw orangered;
 }
 
@@ -194,8 +193,8 @@ styled here
     display: flex;
     align-items: center;
     width: auto;
-    margin-right: 1vw;
-    font-size: 1.4vw;
+    margin-right: 1.2vw;
+    font-size: 1.5vw;
 }
 .filter-buttons
 {   
@@ -212,9 +211,9 @@ styled here
     font-weight: bold;
     box-shadow: 0 0 0.3vw grey;
     margin-right: 1vw;
-    padding-right: 1vw;
+    padding-right: 2vw;
     border-radius: 5vw;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .button:hover{
     box-shadow: 0 0 0.3vw orangered;
@@ -227,8 +226,8 @@ styled here
     justify-content: center;
     color: blue;
     margin-right: 0.6vw;
-    width: 3vw;
-    height: 3vw;
+    width: 3.5vw;
+    height: 3.5vw;
     border-radius: 50%;
     background-color: #DEEBFF;
     font-size: 1.5vw;
@@ -289,14 +288,14 @@ styled here
     justify-content: space-between;
     flex-wrap: wrap;
     width: 95%;
-    height: 45vw;
+    height: 43vw;
 }
 .hebergement-h3
 {
     display: inline-flex;
     align-items: center;
     width: 95%;
-    font-size: 1vw;
+    font-size: 1.6vw;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
 }
@@ -306,7 +305,7 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 32%;
+    width: 31%;
     height: 45%;
     background-color: white;
     border-radius: 1vw;
@@ -343,10 +342,10 @@ styled here
     height: 42%;
 }
 .heb-infos h3{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .heb-infos p{
-    font-size: 0.9vw;
+    font-size: 1.3vw;
 }
 
 
@@ -356,14 +355,14 @@ styled here
     width: 95%;
     margin-top: 1.5vw;
     margin-bottom: 1vw;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
 }
 .populaires > .hebp-pres{
     display: inline-flex;
     background-color:gainsboro;
     justify-content: space-between;
     width: 95%;
-    height: 15vw;
+    height: 16vw;
     margin-bottom: 2vw;
 }
 .hebp-pres > .hebp-link{  
@@ -375,7 +374,7 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 32%;
+    width: 31%;
     height: 100%;
 }
 .hebp-pres> .hebp-link:hover{
@@ -410,10 +409,10 @@ styled here
     
 }
 .hebp-infos h3{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .hebp-infos p{
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 .hebp-infos > .hebp-infos-stars{
     display: flex;
@@ -445,6 +444,7 @@ styled here
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -453,8 +453,8 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 23%;
-    height: auto;
+    width: 32%;
+    height: 43vw;
     border-radius: 1vw 1vw 1vw 1vw;
     box-shadow: 0 0 0.3vw grey;
     color: black;
@@ -485,17 +485,18 @@ styled here
     height: 13%;
     padding-left: 2vw;
     border-radius: 0 0 1vw 1vw;
-    font-size: 1vw;
+    font-size: 1.35vw;
 }
 
 .activities-presentation > .slot2{
     border-radius: 1vw 1vw 1vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 23%;
-    height: auto;
+    width: 66%;
+    height: 43vw;
+    margin-bottom: 1.5vw;
 }
 
 .slot2 > .slot2-top-link{
@@ -503,8 +504,8 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 53%;
+    width: 49%;
+    height: 100%;
     box-shadow: 0 0 0.5vw grey;
     border-radius: 1vw 1vw 1vw 1vw;
     color: black;
@@ -519,8 +520,8 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 38%;
+    width: 49%;
+    height: 100%;
     box-shadow: 0 0 0.5vw grey;
     border-radius: 1vw 1vw 1vw 1vw;
     color: black;
@@ -548,33 +549,33 @@ styled here
     border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
-    height: 75%;
+    height: 87%;
     object-fit: cover;
 }
 .slot2-top-link > .slot2-top > .top-h3{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 25%;
-    padding-left: 10%;
+    height: 13%;
+    padding-left: 2vw;
     border-radius: 0 0 1vw 1vw;
-    font-size: 1vw;
+    font-size: 1.35vw;
 }
 .slot2-bottom-link > .slot2-bottom img{
     border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
-    height: 65%;
+    height: 87%;
     object-fit: cover;
 }
 .slot2-bottom-link > .slot2-bottom > .bottom-h3{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 35%;
+    height: 13%;
     padding-left: 2vw;
     border-radius: 0 0 1vw 1vw;
-    font-size: 1vw;
+    font-size: 1.35vw;
 }
 
 
@@ -599,17 +600,17 @@ styled here
     height: 13%;
     padding-left: 2vw;
     border-radius: 0 0 1vw 1vw;
-    font-size: 1vw;
+    font-size: 1.35vw;
 }
 
 
 .activities-presentation > .slot4{
-    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 23%;
+    width: 66%;
+    height: 43vw;
     border-radius: 1vw 1vw 1vw 1vw;
 }
 
@@ -620,8 +621,8 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 43%;
+    width: 49%;
+    height: 100%;
     border-radius: 1vw;
     box-shadow: 0 0 0.5vw grey;
 }
@@ -635,8 +636,8 @@ styled here
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 47%;
+    width: 49%;
+    height: 100%;
     box-shadow: 0 0 0.5vw grey;
     border-radius: 1vw;
 }
@@ -662,7 +663,7 @@ styled here
     border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
-    height: 72%;
+    height: 87%;
     object-fit: cover;
 }
 
@@ -670,26 +671,26 @@ styled here
     display: flex;
     align-items: center;
     width: 100%;
-    height: 28%;
+    height: 13%;
     padding-left: 2vw;
     border-radius: 0 0 1vw 1vw;
-    font-size: 1vw;
+    font-size: 1.35vw;
 }
 .slot4-bottom-link > .slot4-bottom img{
     border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
-    height: 74%;
+    height: 87%;
     object-fit: cover;
 }
 .slot4-bottom-link > .slot4-bottom > .bottom-h3{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 26%;
+    height: 13%;
     padding-left: 2vw;
     border-radius: 0 0 1vw 1vw;
-    font-size: 1vw;
+    font-size: 1.35vw;
 }
 
 footer{
@@ -707,11 +708,11 @@ footer > .ftr{
 }
 .ftr h2{
     margin-bottom: 1vw;
-    font-size: 2vw;
+    font-size: 2.3vw;
 }
 .ftr p{
     margin-bottom: 1vw;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 .ftr > .ftr-right{
