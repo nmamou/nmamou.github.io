@@ -3,8 +3,8 @@
     --blue-background: #DEEBFF;
 }
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     
@@ -21,9 +21,11 @@ body {
 }
 /***Header styling**/
 header{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 93%;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
     border: 0px solid black;
 }
 nav{
@@ -32,30 +34,41 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    margin-bottom: 40px;
 }
 
 nav ul{
     display: inline-flex;
+    width: auto;
     list-style: none;
 
 }
 nav ul li{
-    margin-left: 40px;
+    margin-left: 2vw;
 }
 nav ul li a{
     text-decoration: none;
     color: var(--blue-reservia);
-    font-size: 25px;
+    font-size: 1.3vw;
     font-weight: bold;
 }
 nav ul li a:hover{
-    padding: 6px;
-    font-size: 26px;
+    font-size: 1.5vw;
     color: white;
     background-color: var(--blue-reservia);
 }
+nav img{
+    display: flex;
+    width: 9%;
+}
 
+header h1{
+    display: inline-flex;
+    font-size: 2vw;
+}
+header p{
+    display: inline-flex;
+    font-size: 1vw;
+}
 
 /*The Search menu box styling:
 It is decomposed to the three follwing rows:
@@ -68,150 +81,143 @@ It is decomposed to the three follwing rows:
     flex-direction: column;
     margin: 0 auto;
     width: 93%;
-    
+    margin-bottom: 3vw;
 }
-
-.search-menu > .search-box{
+.search-box{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
+    align-items: center;
+    margin-bottom: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.3vw grey;
     width: 40%;
+    height: 2.8vw;
 }
 
-.search-menu > .filter{
-    display: flex;
-    align-items: center;
-    
-    width: 100%;
-    height: auto;
-}
-
-.search-menu > .txt-bottom{
+.filter{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 20%;
+    margin-bottom: 1.5vw;
+}
+
+.txt-bottom{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1vw;
  }
+ 
+ /******The bottom text styling******/
+.fa-info{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    background-color: white;
+    margin-right: 0.5vw;
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    box-shadow: 0 0 0.2vw grey;
+}
+
 /* Search box styling:
 All the elements of the search box 
 are styled here
 */
 .fas-search{
-    display: inline-flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     background: grey;
-    border-radius: 10px 0px 0px 10px;
-    height: 60px;
-    padding: 0px 15px;
-    font-size: 20px;
+    border-radius: 0.5vw 0 0 0.5vw;
+    padding: 0 1.2vw;
+    font-size: 1.2vw;
+    height: 100%;
 }
 .fas-search:hover{
-    font-size: 28px;
+    font-size: 1.4vw;
     color:  var(--blue-reservia);
     
 }
 .search-field{
     display: inline-flex;
     flex: 1;
-    height: 60px;
+    height: 100%;
     outline: none;
     border: none;
     appearance: none;
-    padding: 0px 0px 0px 15px;
-    font-size: 25px;
+    padding: 0 0 0 1vw;
+    
 }
 .search-field:hover{
     display: inline-flex;
     flex: 1;
-    height: 60px;
+    height: 100%;
     outline: none;
     border: none;
     appearance: none;
-    padding: 0px 0px 0px 15px;
+    padding: 0 0 0 1vw;
     background-color: gainsboro;
 }
 
 .search-field::placeholder{
-    
     color: black;
-    font: 25px;
+    font-size: 1.35vw;
     font-weight: bold;
 }
 
 .submit-button{
     display: inline-flex;
-    padding: 0px 15px;
+    padding: 0 1vw;
     border: none;
     outline: none;
     color: white;
     background:var(--blue-reservia);
-    height: 60px;
-    border-radius: 0px 10px 10px 0px;
-    font-size: 25px;
+    height: 100%;
+    border-radius: 0 0.5vw 0.5vw 0;
+    font-size: 1.35vw;
     font-weight: bold;
 }
 .submit-button:hover{
-    font-size: 27px;
-    box-shadow: 0px 0px 10px orangered;
+    font-size: 1.45vw;
+    box-shadow: 0 0 0.3vw orangered;
 }
-
-/******The bottom text styling******/
-
- .txt-bottom > .fa-info{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: #0065FC;
-     background-color: white;
-     background-color: ;
-     margin-right: 10px;
-     width: 30px;
-     height: 30px;
-     border-radius: 50%;
-     box-shadow: 0px 0px 5px grey;
- }
-
-
 
 
 /* The filter-buttons styling
 All the elements of the filter box are
 styled here
 */
-
 .filter h3{
     display: flex;
+    align-items: center;
     width: auto;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    
+    margin-right: 1vw;
+    font-size: 1.4vw;
 }
-.filter > .filter-buttons
+.filter-buttons
 {   
-    display: inline-flex;
+    display: flex !important;
     align-items: center;
     flex-wrap: wrap;
-    height: auto;
     width: 80%;
 }
 .button{
-    box-shadow: 0px 0px 15px grey;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    padding-right: 15px;
-    border-radius: 50px;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 25px;
+    box-shadow: 0 0 0.3vw grey;
+    margin-right: 1vw;
+    padding-right: 1vw;
+    border-radius: 5vw;
+    font-size: 1.2vw;
 }
 .button:hover{
-    box-shadow: 0px 0px 5px orange;
+    box-shadow: 0 0 0.3vw orangered;
     background-color: var(--blue-reservia);
     color: white;
 }
@@ -220,12 +226,12 @@ styled here
     align-items: center;
     justify-content: center;
     color: blue;
-    margin-right: 10px;
-    width: 60px;
-    height: 60px;
+    margin-right: 0.6vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     background-color: #DEEBFF;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 
@@ -235,46 +241,47 @@ All the elements of the  presentation sectio are
 styled here
 */
 .presentation{
-    padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 0px solid red;
     margin: 0 auto;
+    margin-bottom: 3.5vw;
     width: 93%;
     height: auto;
 }
-.presentation > .hebergement{
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px grey;
-    background-color: gainsboro;
+.hebergement{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 66%;
     height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.5vw grey;
+    background-color: gainsboro;
 }
 
-.presentation > .populaires{
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px grey;
-    background-color: gainsboro;
+.populaires{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 31%;
     height: auto;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.5vw grey;
+    background-color: gainsboro;
 }
+    
+    
 
-.hebergement > .hebergement-h1{
+.hebergement-h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid blue;
     width: 91%;
-    height: 13%;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
 }
 .hebergement > .heb-pres{
     
@@ -282,42 +289,39 @@ styled here
     justify-content: space-between;
     flex-wrap: wrap;
     width: 91%;
-    height: 74%;
+    height: 30vw;
 }
-.hebergement > .hebergement-h3
+.hebergement-h3
 {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     align-items: center;
-    border: 0px solid blue;
     width: 91%;
-    height: 13%;
+    font-size: 1vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
 }
 .heb-pres> .heb-link{
-    background-color: white;
-    border-radius: 24px;
-    box-shadow: 0px 0px 10px grey;
-    text-decoration: none;
-    color: black;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
     width: 31%;
-    height: 47%;
+    height: 45%;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.5vw grey;
+    text-decoration: none;
+    color: black;
 }
 .heb-pres> .heb-link:hover{
-    box-shadow: 0px 0px 20px orangered;
+    box-shadow: 0 0 0.6vw orangered;
 }
-
-
 
 .heb-link > .heb{
     background-color: white;
-    
-    padding: 5px;
-    border-radius: 24px;
+    padding: 0.3vw;
+    border-radius: 0.8vw;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -325,20 +329,25 @@ styled here
 }
 .heb > .heb-img{
     display: flex;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 0.6vw 0.6vw 0 0;
     width: 100%;
     height: 58%;
     object-fit: cover;
 }
 .heb > .heb-infos{
-    padding-left: 15px;
+    padding-left: 0.8vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
     height: 42%;
 }
-
+.heb-infos h3{
+    font-size: 1.2vw;
+}
+.heb-infos p{
+    font-size: 0.9vw;
+}
 
 
 
@@ -348,7 +357,9 @@ styled here
     justify-content: space-between;
     align-items: center;
     width: 82%;
-    height: 8%;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
 }
 .populaires > .hebp-pres{
     display: flex;
@@ -357,11 +368,11 @@ styled here
     justify-content: space-between;
     align-items: center;
     width: 82%;
-    height: 80%;
+    height: 32vw;
 }
 .hebp-pres > .hebp-link{  
-    border-radius: 24px;
-    box-shadow: 0px 0px 15px grey;
+    border-radius: 0.8vw;
+    box-shadow: 0 0 0.5vw grey;
     text-decoration: none;
     color: black;
     display: flex;
@@ -372,15 +383,14 @@ styled here
     height: 29%;
 }
 .hebp-pres> .hebp-link:hover{
-    box-shadow: 0px 0px 20px orangered;
+    box-shadow: 0 0 0.5vw orangered;
 }
 
 
 .hebp-link > .hebp{  
     background-color: white;
-    border-radius: 24px;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 0.8vw;
+    padding: 0.3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -388,7 +398,7 @@ styled here
     height: 100%;
 }
 .hebp > .hebp-img{ 
-    border-radius: 18px 0px 0px 18px; 
+    border-radius: 0.6vw 0 0 0.6vw; 
     display: flex;
     flex-direction: column;
     width: 38%;
@@ -398,32 +408,41 @@ styled here
 }
 .hebp > .hebp-infos{  
     display: grid;
-    width: 53%;
+    flex-direction: column;
+    width: 55%;
     height: 100%;
     
 }
+.hebp-infos h3{
+    font-size: 1.2vw;
+}
+.hebp-infos p{
+    font-size: 1vw;
+}
 .hebp-infos > .hebp-infos-stars{
     display: flex;
-    align-self: self-end;
+    align-self: flex-end;
+    
 }
 
 
+
 .activities{
-    border-radius: 20px 20px 20px 20px;
-    background-color:white;
-    border: 0px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 93%;
     height: auto;
-    margin: 50px auto;
+    margin: 0 auto;
+    margin-bottom: 2.5vw;
+    border-radius: 1vw 1vw 1vw 1vw;
+    background-color:white;
+    
 }
 .activities h1{
-    border: 0px solid black;
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 1.5vw;
     height: auto;
 }
 .activities > .activities-presentation{
@@ -431,54 +450,50 @@ styled here
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: auto;
 }
 
 .activities-presentation > .slot-link{
-    border: 0px solid grey;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 10px grey;
-    color: black;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 23%;
     height: auto;
+    border-radius: 1vw 1vw 1vw 1vw;
+    box-shadow: 0 0 0.3vw grey;
+    color: black;
+    text-decoration: none;
 }
 .activities-presentation > .slot-link:hover{
-    box-shadow: 0px 0px 20px orangered;
+    box-shadow: 0 0 0.5vw orangered;
 }
 .slot-link > .slot1{
-    border: 0px solid black;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1vw 1vw 1vw 1vw;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 .slot-link > .slot1 img{
-    border: 0px solid green;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
     height: 87%;
     object-fit: cover;
 }
 .slot-link > .slot1 > .slot1-h3{
-    border: 0px solid red;
-    padding-left: 10%;
-    border-radius: 0px 0px 20px 20px;
+    
     display: flex;
     align-items: center;
     width: 100%;
     height: 13%;
+    padding-left: 2vw;
+    border-radius: 0 0 1vw 1vw;
+    font-size: 1vw;
 }
 
 .activities-presentation > .slot2{
-    border: 0px solid black;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1vw 1vw 1vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -488,40 +503,38 @@ styled here
 }
 
 .slot2 > .slot2-top-link{
-    border: 0px solid grey;
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 20px 20px 20px 20px;
-    color: black;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 53%;
-}
-.slot2-top-link:hover{
-    box-shadow: 0px 0px 20px orangered;
-}
-.slot2 > .slot2-bottom-link{
-    border: 0px solid blue;
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 0.5vw grey;
+    border-radius: 1vw 1vw 1vw 1vw;
     color: black;
     text-decoration: none;
+}
+.slot2-top-link:hover{
+    box-shadow: 0 0 0.5vw orangered;
+}
+.slot2 > .slot2-bottom-link{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 38%;
+    box-shadow: 0 0 0.5vw grey;
+    border-radius: 1vw 1vw 1vw 1vw;
+    color: black;
+    text-decoration: none;
 }
 .slot2-bottom-link:hover{
-    box-shadow: 0px 0px 20px orangered;
+    box-shadow: 0 0 0.5vw orangered;
 }
 .slot2-top-link > .slot2-top{
-    border: 0px solid blue;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1vw 1vw 1vw 1vw;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -529,90 +542,82 @@ styled here
 }
 
 .slot2-bottom-link > .slot2-bottom{
-    border: 0px solid blue;
-    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    border-radius: 1vw 1vw 1vw 1vw;
 }
 .slot2-top-link > .slot2-top img{
-    border: 0px solid green;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
     height: 75%;
     object-fit: cover;
 }
 .slot2-top-link > .slot2-top > .top-h3{
-    border: 0px solid red;
-    padding-left: 10%;
-    border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
     width: 100%;
     height: 25%;
+    padding-left: 10%;
+    border-radius: 0 0 1vw 1vw;
+    font-size: 1vw;
 }
 .slot2-bottom-link > .slot2-bottom img{
-    border: 0px solid black;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
     height: 65%;
     object-fit: cover;
 }
 .slot2-bottom-link > .slot2-bottom > .bottom-h3{
-    border: 0px solid red;
-    padding-left: 10%;
-    border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
     width: 100%;
     height: 35%;
+    padding-left: 2vw;
+    border-radius: 0 0 1vw 1vw;
+    font-size: 1vw;
 }
 
 
-.slot-link > .slot3{
-    border: 0px solid black;
-    border-radius: 20px 20px 20px 20px;
+.slot-link > .slot3{ 
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    border-radius: 1vw 1vw 1vw 1vw;
 }
 .slot-link > .slot3 img{
-    border: 0px solid black;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
     height: 87%;
     object-fit: cover;
 }
 .slot-link > .slot3 > .slot3-h3{
-    border: 0px solid red;
-    padding-left: 10%;
-    border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
     width: 100%;
     height: 13%;
+    padding-left: 2vw;
+    border-radius: 0 0 1vw 1vw;
+    font-size: 1vw;
 }
 
 
 .activities-presentation > .slot4{
-    border: 0px solid red;
-    border-radius: 20px 20px 20px 20px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 23%;
-    height: auto;
+    border-radius: 1vw 1vw 1vw 1vw;
 }
 
 .slot4 > .slot4-top-link{
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 10px grey;
     color: black;
     text-decoration: none;
     display: flex;
@@ -621,13 +626,13 @@ styled here
     align-items: center;
     width: 100%;
     height: 43%;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.5vw grey;
 }
 .slot4-top-link:hover{
-    box-shadow: 0px 0px 20px orangered;
+    box-shadow: 0 0 0.5vw orangered;
 }
 .slot4 > .slot4-bottom-link{
-    box-shadow: 0px 0px 10px grey;
-    border-radius: 20px 20px 20px 20px;
     text-decoration: none;
     color: black;
     display: flex;
@@ -636,9 +641,11 @@ styled here
     align-items: center;
     width: 100%;
     height: 47%;
+    box-shadow: 0 0 0.5vw grey;
+    border-radius: 1vw;
 }
 .slot4-bottom-link:hover{
-    box-shadow: 0px 0px 20px orangered;
+    box-shadow: 0 0 0.5vw orangered;
 }
 
 .slot4-top-link > .slot4-top{
@@ -656,8 +663,7 @@ styled here
     height: 100%;
 }
 .slot4-top-link > .slot4-top img{
-    border: 0px solid black;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
     height: 72%;
@@ -665,55 +671,54 @@ styled here
 }
 
 .slot4-top-link > .slot4-top > .top-h3{
-    border: 0px solid red;
-    padding-left: 10%;
-    border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
     width: 100%;
     height: 28%;
+    padding-left: 2vw;
+    border-radius: 0 0 1vw 1vw;
+    font-size: 1vw;
 }
 .slot4-bottom-link > .slot4-bottom img{
-    border: 0px solid black;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1vw 1vw 0 0;
     display: flex;
     width: 100%;
     height: 74%;
     object-fit: cover;
 }
 .slot4-bottom-link > .slot4-bottom > .bottom-h3{
-    border: 0px solid red;
-    padding-left: 10%;
-    border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
     width: 100%;
     height: 26%;
+    padding-left: 2vw;
+    border-radius: 0 0 1vw 1vw;
+    font-size: 1vw;
 }
 
 footer{
     width: 100%;
     background-color: gainsboro;
-    padding: 40px 0px 40px 0px;
+    padding: 2vw 0 2vw 0;
 }
 
 footer > .ftr{
-    
-    width: 93%;
     display: flex;
+    width: 93%;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 .ftr h2{
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
+    font-size: 2vw;
 }
 .ftr p{
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
 }
 
 .ftr > .ftr-right{
-    
     display: flex;
     flex-direction: column;
     width: 33%;
@@ -735,10 +740,8 @@ footer > .ftr{
 }
 .ftr-link:hover{
     color: orangered;
-   text-decoration: underline orangered;
-    
+    text-decoration: underline orangered;
 }
-
 
 .fa-star{
     color: var(--blue-reservia);

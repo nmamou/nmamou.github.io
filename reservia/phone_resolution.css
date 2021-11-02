@@ -164,7 +164,7 @@ All the elements of the search box
 are styled here
 */
 .fas-search{
-    display: inline-flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     background: gainsboro;
