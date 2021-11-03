@@ -292,6 +292,7 @@ styled here
     border-radius: 8vw;
 }
 .button:hover{
+    border-radius: 8vw;
     box-shadow: 0 0 1vw black;
     background-color: var(--blue-reservia);
     color: white;
@@ -796,11 +797,11 @@ footer > .ftr{
     margin: 0 auto;
 }
 footer h2{
-    font-size: 9vw;
+    font-size: 7vw;
     margin-bottom: 4vw;
 }
 footer p{
-    font-size: 5.5vw;
+    font-size: 3.5vw;
     margin-bottom: 4vw;
 }
 
