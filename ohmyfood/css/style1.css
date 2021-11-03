@@ -503,7 +503,7 @@ html {
     padding-right: 3vw;
   }
 }
-@media all and (max-width: 1024px) and (min-width: 540px) and (orientation: portrait) {
+@media all and (max-width: 1024px) and (min-width: 540px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -996,7 +996,7 @@ html {
     font-size: 2vw;
   }
 }
-@media all and (min-width: 1026px) and (orientation: landscape) {
+@media all and (min-width: 1025px) {
   .header {
     display: flex;
     flex-direction: column;

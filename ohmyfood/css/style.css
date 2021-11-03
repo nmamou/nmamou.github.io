@@ -519,7 +519,7 @@
     font-size: 1.8vw;
   }
 }
-@media all and (min-width: 1025px){
+@media all and (min-width: 1025px) {
   .header {
     display: flex;
     flex-direction: column;
