@@ -23,84 +23,111 @@ body {
 }
  /***Header styling**/
 header{
-    margin: 0 auto;
-    width: 90%;
-    margin-bottom: 6vw;
-    border: 0px solid black;
-}
-header h1{
-    font-size: 6vw;
-    font-weight: bold;
-    margin-bottom: 2vw;
-    
-}
-nav{
-    width: auto;
     display: flex;
     flex-direction: column;
-    
-    flex-wrap: nowrap;
-    margin-bottom: 9vw;
-    margin-top: 6vw;
-    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 4vw;
 }
-
-.nav-ul{
+header h1{
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+    font-size: 6vw;
+    font-weight: bolder;
+    margin-bottom: 3vw;
+}
+header p{
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+    font-size: 3.5vw;
+}
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+nav img{
+    display: flex;
+    margin-left: 4vw;
+    width: 35%;
+}
+nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     flex-wrap: wrap;
-    margin-top: -6.5vw;
+    margin-top: -10vw;
+    height: 25vw;
+    position: relative;
 
 }
-nav img{
-    display: flex;
-    width: 25vw;
-}
+
 .nav-ul-li1{
     display: flex;
-    align-items: center;
-    order: 2;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    
+    justify-content: center;
+    position: absolute;
+    width: 49.7%;
+    bottom: 0;
+    left: 0%;
+    padding-bottom: 3vw;
+    border-bottom: 1vw var(--blue-reservia) solid;
 }
+.nav-ul-li1:hover {
+    width: 50.3%;
+    color: gainsboro;
+    padding-bottom: 3vw;
+    border-bottom: 1vw gainsboro solid;
+}
+.nav-ul-li1:hover a{
+    color: grey;
+}
+
 .nav-ul-li2{
     display: flex;
-    align-items: center;
-    order: 3;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    
-    
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 49.7%;
+    padding-bottom: 3vw;
+    border-bottom: 1vw var(--blue-reservia) solid;
+}
+.nav-ul-li2:hover {
+    left: 49%;
+    color: gainsboro;
+    padding-bottom: 3vw;
+    border-bottom: 1vw gainsboro solid;
+}
+.nav-ul-li2:hover a{
+    color: grey;
 }
 .nav-ul-li3{
     display: flex;
-    align-items: center;
-    order: 1;
-    width: auto;
-    margin-top: 0vw;
-    margin-left: 72vw;
-    margin-bottom: 8vw;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 58%;
+    width: 50%;
 }
-nav ul li{
-    display: flex;
-    margin-left: 0vw;
-}
-nav ul li a{
-    text-decoration: none;
-    color: var(--blue-reservia);
-    font-size: 4vw;
-    font-weight: bold;
-}
-nav ul li a:hover{
-    text-decoration: none;
+.nav-ul-li3:hover a{
     color: grey;
-    font-size: 4vw;
-    font-weight: bold;
-    
 }
 
+nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--blue-reservia);
+    font-size: 4.8vw;
+    position: relative;
+}
 
 /*The Search menu box styling:
 It is decomposed to the three follwing rows:
@@ -108,55 +135,39 @@ It is decomposed to the three follwing rows:
 **filter**
 **txt-bottom**
 */
-.ab{
-    width: 93%;
-    border: 1px solid black;
-    margin: 0 auto;
-}
 
-
-.search-menu{
+.search-section{
     display: flex;
     flex-direction:  column;
-    width: 91%;
+    align-items: center;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
-.search-menu > .search-box{
+.search-box{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0px auto;
-    border-radius: 10vw;
-    box-shadow: 0px 0px 2vw white;
-    flex-wrap: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 7vw;
-    margin-top: 2vw;
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    box-shadow: 0 0 2vw white;
 }
 
-.search-menu > .filter{
+.filter{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
+    width: 92%;
+    margin: 0 auto;
     margin-bottom: 7vw;
 }
 
-.search-menu > .txt-bottom{
+.txt-bottom{
     display: flex;
     align-items: center;
-    width: 100%;
-    height: auto;
-    font-size: 4vw;
-    margin-top: 0vw;
-    margin-bottom: 2vw;
+    width: 93%;
+    font-size: 3.5vw;
+    margin: 0 auto;
+    margin-bottom: 7vw;
  }
  
 /* Search box styling:
@@ -168,85 +179,78 @@ are styled here
     justify-content: center;
     align-items: center;
     background: gainsboro;
-    border-radius: 3vw 0px 0px 10px;
+    border-radius: 2vw 0 0 2vw;
+    padding: 0vw 5vw;
     height: 13vw;
-    width: 15%;
-    padding: 0px 3vw;
+    width: 13%;
     font-size: 5vw;
 }
 .fas-search:hover{
-    height: 13vw;
-    width: 16%;
-    font-size: 6vw;
+    font-size: 5.5vw;
     color:  var(--blue-reservia);
     
     
 }
-.search-box > .search-field{
-    display: inline-flex;
-    height: auto;
+.search-field{
+    display: flex;
     outline: none;
     border: none;
     appearance: none;
-    padding: 0px 0px 0px 4vw;
-    font-size: 5vw;
-    width: 60%;
     height: 13vw;
+    width: 65%;
+    padding-left: 4vw;
+    font-size: 5vw;
+    border-top: solid 0.1vw gainsboro;
+    border-bottom: solid 0.1vw gainsboro;
+
     
 }
 .search-field:hover{
-    display: inline-flex;
-    height: 13vw;
+    display: flex;
     outline: none;
     border: none;
-    appearance: none;
-    padding: 0px 0px 0px 4vw;
-    width: 60%;
-    background-color: var(--blue-background);
-    
+    border-top: solid 0.1vw gainsboro;
+    border-bottom: solid 0.1vw gainsboro;
     
 }
-
 .search-field::placeholder{
-    
+    background-color: transparent;
     color: black;
     font: 2vw;
     font-weight: bold;
 }
 
-.search-box > .submit-button{
-    display: inline-flex;
-    padding: 0px 2vw;
+.submit-button{
+    display: flex;
+    padding: 0 2vw;
+    width: 22%;
+    height: 13vw;
     border: none;
     outline: none;
     color: white;
     background:var(--blue-reservia);
-    height: 13vw;
-    border-radius: 3vw 3vw 3vw 3vw;
+    border-radius: 0 2vw 2vw 0;
     font-size: 4vw;
     font-weight: bold;
-    width: 20%;
 }
 .submit-button:hover{
-    font-size: 4.5vw;
-    width: 21% ;
-    box-shadow: 0px 0px 2vw black;
+    font-size: 4.1vw;
+    box-shadow: 0 0 1vw blueviolet;
 }
 
 /******The bottom text styling******/
 
 .fa-info{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: var(--blue-reservia);
-    width: 7vw;
-    height: 5.5vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
-    box-shadow: 0vw 0vw 2vw gainsboro;
-    margin-right: 2.5vw;
-    margin-top: -5vw;
+    box-shadow: 0vw 0vw 0.2vw grey;
+    margin: -4.5vw 2vw 0 0;
 }
 
 
@@ -258,48 +262,47 @@ styled here
 
 .filter h3{
     display: flex;
-    width: auto;
-    margin-right: 3vw;
-    margin-bottom: 3vw;
-    
+    width: 100%;
+    margin-bottom: 4vw;
+    font-size: 5.5vw;
 }
-.filter > .filter-buttons
+.filter-buttons
 {   
-    display: inline-flex;
+    display: flex;
+    flex-direction: ;
     align-items: center;
     flex-wrap: wrap;
-    height: auto;
     width: 100%;
 }
 .button{
-    box-shadow: 0px 0px 3vw grey;
-    margin-right: 3vw;
-    margin-bottom: 3vw;
-    padding-right: 4vw;
-    border-radius: 8vw;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 4.5vw;
+    box-shadow: 0 0 0.5vw grey;
+    margin-right: 3vw;
+    margin-bottom: 4.5vw;
+    padding-right: 5vw;
+    border-radius: 8vw;
 }
 .button:hover{
-    box-shadow: 0px 0px 2vw orange;
+    box-shadow: 0 0 1vw black;
     background-color: var(--blue-reservia);
     color: white;
 }
 .fas-button{
-    display: inline-flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    color: blue;
-    margin-right: 2vw;
-    width: 12vw;
-    height: 12vw;
+    color: var(--blue-reservia);
+    width: 13vw;
+    height: 13vw;
+    margin-right: 1.5vw;
     border-radius: 50%;
     background-color: #DEEBFF;
-    font-size: 4.5vw;
+    font-size: 5.5vw;
 }
 
 
@@ -503,11 +506,10 @@ styled here
     margin-bottom: 10vw;
 }
 .activities h1{
-    border: 0px solid black;
     display: flex;
     width: 100%;
     margin-bottom: 7vw;
-    height: auto;
+    font-size: 5vw;
 }
 .activities > .activities-presentation{
     display: flex;
@@ -518,9 +520,8 @@ styled here
 }
 
 .activities-presentation > .slot-link{
-    border: 0px solid grey;
     border-radius: 4vw 4vw 4vw 4vw;
-    box-shadow: 0px 0px 2vw grey;
+    box-shadow: 0 0 2vw grey;
     color: black;
     text-decoration: none;
     display: flex;
@@ -788,13 +789,14 @@ footer > .ftr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    margin: 0px auto;
+    margin: 0 auto;
 }
-.ftr h2{
+footer h2{
+    font-size: 9vw;
     margin-bottom: 4vw;
 }
-.ftr p{
+footer p{
+    font-size: 5.5vw;
     margin-bottom: 4vw;
 }
 
