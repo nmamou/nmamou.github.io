@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo 05.png">
+  <title>HOMY</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Pacifico&family=Poppins:wght@300;400;500;600;700&family=Redressed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+  <!--use swipre-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"  />
+  <!-----CSS------------> 
+  <link   rel="stylesheet"href="style.css">
+  <!-----animate CSS------------> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+  <!-----------------------------head----------------------------------------------->
+</head>
+<body id="body" >
+  
+  <!---------------nav------------------------------------------------------------->
+  <header class="header ">
+    <div class="container"> 
+     <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <img class="mylogo" src="logo 05.png" width="px" height="px">
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation"data-target="#basicExampleNav" data-toggle="collapse" aria-expanded="false" aria-controls="basicExampleNav" >
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="collapse navbar-collapse" id="basicExampleNav">
+          <ul class="navbar-nav ml-auto">
+    
+            <li class="nav-item active here">
+              <a class="nav-link" aria-current="page" href="#hero-banner"><b>Home</b></a>
+            </li>
+            <li class="nav-item here">
+              <a class="nav-link" href="#about "><b>our property</b></a>
+            </li>
+            <li class="nav-item here">
+              <a class="nav-link" href="#servis-section"><b>Buy</b></a>
+            </li>
+            <li class="nav-item here">
+              <a class="nav-link" href="#work-section"><b>About Us </b></a>
+            </li>
+            <li class="nav-item here">
+              <a class="nav-link" href="#feature"><b>Rent </b></a>
+            </li>
+            
+             <li class="nav-item">
+              <!-- <button class="btn btn">GET STARTED</button>-->
+              <button class="btn btn-heme" onclick="document.getElementById('id01').style.display='block'">LOG IN</button>
+            </li>
+            <li class="modeicon" id="dark" > 
+              <i  class="fas fa-moon"></i>
+            </li>
+          </ul>
+        
+        </nav>
+      </div>
+</nav>
+  <!---------------nav------------------------------------------------------------->
+
+  <!------------------------------------- log in -------------------------->
+  <div id="id01" class="modal">
+    <form class="animate" action="/action_page.php" method="post">
+      <section class="log py-5">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+            
+          <div class="container">
+                  <div class="row log-in g-0">
+                    <div class="col-lg-5">
+                      <img src="./assets/imag/photo1.jpg" class="img-fluid" width="380">
+                    </div>
+                    <div class="col-lg-7 text-center py-5">
+                      <h1 class="animate__animated animate__heartBeat animate_infinite">Welcom to HOMY</h1>
+                      
+                      <form>
+                        <div class="form-row py-3 pt-5">
+                          <div class="offset-1 col-lg-10">
+                            <input type="text" class="inp px-3" placeholder="UserName">
+                          </div>
+                        </div>
+                        <div class="form-row py-3">
+                          <div class="offset-1 col-lg-10">
+                            <input type="password" class="inp px-3" placeholder="password">
+                          </div>
+                        </div>
+                        <div class="form-row py-3">
+                          <div class="offset-1 col-lg-10">
+                            <button class="btn10"> LOG IN</button>
+                          </div>
+                        </div>
+                      </form>
+          
+                      <hr>
+                      <h3> <b>sign in with</b> </h3>
+                      <a href="#" class="icon"> <i class="fab fa-google"></i> google</a>
+                      <a href="#" class="icon"><i class="fab fa-facebook"></i> facebook</a>
+                        
+                    </div>
+                </div>
+          </div>
+      </section>
+            
+            
+    </form>
+  </div>
+  <!------------------------------------- log in -------------------------->
+  </header>
+  <!--------hedr------------------------------------------------------------------------------------------------------>
+  <!----------------HEDR BARE------------------------------------------------------------------------------------------------------>
+  <section id="hero-banner">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-5 my-auto white1">
+           <h1 class="h1 h1-responsive">Find Home Find Happiness</h1>
+           <p>In expecting display thought</p>
+          <button class="btn btn-heme-2">Learn Mores</button> 
+         
+         </div>
+         <div class="col-md-5 my-auto"> 
+           <div class="image">
+             <img src="assets/imag/photo9.jpg" alt="" height="500" width="450">
+           </div>
+         </div>
+      </div>
+    </div>
+  </section>
+  <!----------------SARCH SECTION------------------------------------------------------------------------------------------------------>
+  <section id="search-section">
+    <div class="container">
+     <div class="col-md-11mx-auto search-area shadow"  >
+       <div class="row">
+       <div class="col-md-3">
+         <select>
+         <option>Localion</option>                   
+         <option>Localion</option>               
+         <option>Localion</option>       
+         </select>
+         <input type="text"class="form-control"placeholder="Localion">
+       </div>   
+       <div class="col-md-3">
+        <select>
+          <option>PrpertyType</option>                   
+          <option>Type1</option>               
+          <option>Type2</option>       
+          </select>
+          <input type="text"class="form-control"placeholder="PrpertyType">
+       </div> 
+       <div class="col-md-3">
+        <select>
+          <option>Max Price</option>                   
+          <option>Min Price</option>               
+          <option>Average</option>       
+          </select>
+          <input type="text"class="form-control"placeholder="500000.00 DZ">
+       </div>
+       <div class="col-md-2ml-automy-auto"></div>
+       <button class="btn btn-heme"> Search</button>
+      </div>
+     </div>
+    </div>
+  </section>
+  <!----------------ABOUT (01)------------------------------------------------------------------------------------------------------>
+  <section id="about"class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="image">
+          <img src="assets/imag/photo5.jpg" alt="">
+       </div>
+       <div class="col-md-5 white1">
+       <h1 class="h1 h1-resonsive mb-4 white1" > We Provide The Best Property For You!</h1>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit<br> . Facilis unde, tempore delectus delenitimpedit quibusdam sit non fuga architecto quae<br>
+       impedit quibusdam sit non fuga architecto quae, .<br><br>Veniam earum ad,  sequi itaque possimus<br><br>.</p>
+       <button class="btn btn-heme-2">Learn Mores</button> 
+      </div>
+      </div>
+    </div> 
+  </section>
+  <!----------------SRVIS SECTION(01)------------------------------------------------------------------------------------------------------>
+    <section id="servis-section" class="">
+       <div class="container">
+        <div class="col-md-12 mx-auto">
+          <div class="d-flex justify-content-between">
+            <div class=" shadow servis-shadow white">
+              <i class="fas fa-user"></i>
+              <h4 class="h5"> Make Yuor Dream True</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing /p>
+            </div>
+            <div class="shadow servis-shadow white">
+              <i class="fas fa-desktop"></i>
+              <h4 class="h5"> Start Yuor Membership</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing /p></div>
+            <div class="shadow servis-shadow white">
+              <i class="fas fa-home"></i>
+              <h4 class="h5">Enjoy Your New Home</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing /p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+  <!----------------PROPERTY SECTION(01)------------------------------------------------------------------------------------------------------>
+   <section id="proprty-section">
+     <div class="container"> 
+      <h1 class="h1 h1-resonsive mb-4 white1 "> Buy your home now</h1>
+      <div class="text-right">
+        <a href="#"> Find More Project <i class="fas fa-arrow-right ml-2 "></i></a>
+      </div> 
+      <!-----porperty list slide-->
+      <div id="property-slider">
+      <!-- Slider main container -->
+  <div class="swiper">    
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/photo4.JPG.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/photo8.jpg" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/photo10.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/photo3.png" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</div>
+      </div>
+     </div>
+   </section>
+  <!----------------WORK SECTION(01)------------------------------------------------------------------------------------------------------>
+ <section id="work-section">
+   <div class="containre"> 
+    <h1 class="h1 h1-resonsive mb-4 white1"> How It Works</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis repellendus ad est ullam? Incidunt ipsa nam, ea voluptat<br>cing elit. Quis repellendus ad est ullam? Incidunt ipsa nam, ea voluptat</p>
+    <div class="col-md-12 mx-auto">
+      <div class="d-md-inline-flex justify -content-between my-5">
+        <div class="  servis-shadow">
+          <i class="fas fa-search"></i>
+          <h4 class="h5 mb-4"> Fine Home</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing<br>
+                  orem, ipsum dolor sit amet consectetur<br>
+                         orem, ipsum dolor sit amet
+          </p>
+        </div>
+        <div class=" servis-shadow">
+          <i class="fas fa-people-carry"></i>
+          <h4 class="h5 mb-4"> Meet Roommates</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing<br>
+                 orem, ipsum dolor sit amet consectetur<br>
+                   orem, ipsum dolor sit amet </p></div>
+        <div class=" servis-shadow">
+          <i class="fas fa-shield-alt"></i>
+          <h4 class="h5 mb-4">Make It Offical</h4>
+          <p><p>Lorem, ipsum dolor sit amet consectetur adipisicing<br>
+            orem, ipsum dolor sit amet consectetur<br>
+                   orem, ipsum dolor sit amet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+  <!---------------- FEATURE PROPERTY SECTION(01)------------------------------------------------------------------------------------------------------>
+ <section id="feature" >
+   <div class="container ">
+   
+    <h1 class="h1 h1-resonsive mb-4 white1 "> Our Featured Properties</h1>
+    <p class="white1 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis repellendus ad est ullam? Incidunt ipsa nam, ea voluptat<br>cing elit.
+      Quis repellendus ad est ullam? Incidunt ipsa nam, ea voluptat</p>
+     <br>
+     <div class="row  justify-content-between my-5">
+     <div class="col-md-11mx -auto">
+     <div class="d-flex">
+       <div class="col-md 4 mx-auto my-3">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/1.jfif" alt=""height="" width="">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg 4 mx-auto my-3 ">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/2.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg 4 mx-auto my-3 ">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/trendzvenues_com.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md 4 mx-auto my-3">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/3.jfif" alt=""height="" width="">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div> 
+     <br>
+     <div class="d-flex">
+    <div class="col-lg 4 mx-auto my-3 ">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/Kundenhaus Santorin.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg 4 mx-auto my-3 ">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/photo.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg 4 mx-auto my-3">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/photo10.jfif" alt=""height="145" width="240">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md 4 mx-auto my-3">
+      <div class="property-list shadow">
+        <div class="imag">
+          <img src="assets/imag/4.png" alt=""height="" width="">
+          <div class="text-right">
+            <h4 class="h5">10000.00DA</h4>
+          </div>
+          <div class="d-flex justify-content-between mb-4">
+            <div class="item">
+              <h4 class="h5 m-0">Palace</h4>
+             <p class="m-0"> city,country</p> 
+           
+            </div>
+            <div class="item d-fliex align-self-center">
+               <i class="fas fa-bed mr-2 align-self-center"></i> 
+               <span class="mr-3">5</span>
+               <i class="fas fa-bath mr-2 align-self-center"></i>
+               <span>3</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div> 
+    </div> 
+  </div>
+    </div>
+ </section>
+ <hr>
+<!-----------creating a testimonial slider section -------->
+<section id="testimonial-section" class="darkmo">
+<div class="container">
+  <h1 class="h1 h1-responsive mb-4 white1 "> What the are saying </h1>
+  <p class="white1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sunt rem quia expedita officia <br> ea pariatur facere adipisicing elit. Adipisci, sunt rem quia expedita officia </p>
+  <br><br>
+<div id="testimonial-slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper"> 
+      <div class="swiper-slide">
+        <div class="testemonial-list">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="image">
+              <img src="assets/imag/photo10.jfif" alt="">
+            </div>
+          </div>
+            <div class=" offset-md-1 col-md-6 text-left white1  ">
+              <i class="fas fa-quote-left fa-8x"></i>
+               <p class="mt-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vero, maiores accusamus reprehenderit odit quos soluta
+                 veritatis assumenda incidunt laboriosam quis dolor facere eius eveniet  incidunt laboriosam quis dolor facere eius 
+                 eveniet
+                sit!</p>
+                <h4 class="h4 m-0 ">youtuber</h4>
+                <p c>code galaxy</p>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  </div>
+
+</div>
+</div>
+
+</section>
+<!-----creating a newsletter mail section -->
+ <section id="mail-section">
+  <div class="container white1 ">
+  
+    <h1 class="h1 h1-responsive mb-4"> Have question in mind? <br> let us help you  </h1>
+    <div class="col-md-8 mx form shadow mt-3 ">
+      <div class="row ">
+        <div class="col-md-9 my-auto ">
+          <input type="text" class="form-control " placeholder="yourmail@homy.com">
+        </div>
+        <div class="col-md-3 text-right ">
+          <button class="btn btn-heme">
+            send
+          </button>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section>
+  
+
+<!-------footer-->
+
+<section class="footer" id="footer">
+  <div class="footer-box">
+      <h2 class="brand">HO<span>M</span>Y</a></h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste aspernatur modi quos consequatur repellendus rerum sed, nobis atque quas non. Sed voluptate ipsa tempora corrupti exercitationem placeat voluptatem vero facere!</p>
+      <div class="social">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+      </div>
+  </div>
+  <div class="footer-box">
+      <h3>Services</h3>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">FAQ</a></li>
+  </div>
+  <div class="footer-box">
+      <h3>Product</h3>
+      <li><a href="#">Sofa's</a></li>
+      <li><a href="#">Chair's </a></li>
+      <li><a href="#">Living Room</a></li>
+      <li><a href="#">Office </a></li>
+  </div>
+  <div class="footer-box contact-info">
+      <h3>Contact</h3>
+      <span><i class="fas fa-map-marker-alt"></i>  Boumerdes City </span> 
+      <span><i class="fas fa-phone"></i>   +21379346811</span>
+     <span><i class="fas fa-envelope"></i></i>  Homy@gmail.com</span>
+    
+  </div>
+  
+</section>
+
+<div class="copyright">
+  <p>&#169; CarpoolVenom All Right Reserved.</p>
+</div>
+
+
+
+
+
+</section>
+
+
+
+<!------------------------------ js login ------------------------------>
+
+<script>
+  var modal = document.getElementById('id01');
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+<!------------------------------ js login ------------------------------>
+
+
+</body>
+</html>
+ <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!--swipre javascript-->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+ var myswiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView:4,
+  spaceBetween:30,
+  centeredslides:true,
+});
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  loop:'ture',
+   centeredslides:'true',
+
+});
+
+
+</script>
+<script>
+const dark = document.getElementById("dark")
+const body = document.getElementById("body")
+
+
+dark.addEventListener("click", (eo) => {
+  
+  body.classList.toggle("dark")
+
+
+})
+</script>
