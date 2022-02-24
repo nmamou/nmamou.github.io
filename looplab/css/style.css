@@ -1,3 +1,7 @@
+body {
+  background: #333;
+  color: #fff;
+}
 
 .navbar {
   border-bottom: #008ed6 3px solid;
@@ -30,8 +34,7 @@
 }
 
 #home-section .fas,
-#create-section .fas,
-#passion-section .fas {
+#create-section .fas {
   color: #008ed6;
   background: #fff;
   padding: 5px;
@@ -44,30 +47,4 @@
   color: #fff;
   padding: 5px;
   border-radius: 5px;
-}
-#explore-head-section{
-  background-color: #333;
-}
-#create-head-section{
-  
-}
-#connect-section-img{
-  height: 24vw;
-  width: 24vw;
-  border-radius: 50%;
-}
-
-#connect-section .fas{
-  background-color: black;
-  color: white;
-  padding: 0.4vw;
-  border-radius: 0.4vw;
-  
-}
-
-#passion-section{
-  background-color: #333;
-}
-#footer{
-  background-color: #333;
 }
