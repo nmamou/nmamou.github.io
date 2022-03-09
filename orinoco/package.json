@@ -1,0 +1,15 @@
+{
+    "name": "ORINOCO",
+    "version": "1.0.0",
+    "description": "Orinoco Ecommerce Website",
+    "main": "index.js",
+    "scripts": {
+      "sass":"sass --watch ./scss/style.scss:./css/style.css --style expanded",
+      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+    },
+   
+    "author": "Nacer Mamou",
+    "license": "ISC",
+    "browserslist": "last 4 versions"
+  }
+  

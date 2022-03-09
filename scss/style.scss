@@ -1,0 +1,734 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100vw;
+    height: auto;
+    border: 0px solid green;
+    body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+    width: 100%;
+    border: 0px solid red;
+    }
+}
+
+// Color variables
+
+//Backgrounds
+$bgdColor : #131921;
+$bgdColor1 : #262B40;
+$bgdColor2 : #3B425D;
+$bgdColor3 : #FDE0D1;
+$bgdColor4 : #F9C647;
+$bgdColor5 : #F5EB00;
+$bgdColor6 : #F8F8F8;
+$bgdColor7 : #F2F2F2;
+$bgdColor8 : #FFFFFF;
+$bgdColor9 : #FF4747;
+
+//Borders
+$brdrColor : #E1B000;
+$brdrColor1 : #F5F5F5;
+
+//Text
+$txtColor : #FFFFFF;
+$txtColor1 : #CCCCCC;
+$txtColor2 : #DDDDDD;
+$txtColor3 : #399BEA;
+$txtColor4 : #126F8A;
+$txtColor5 : #ED8D00;
+$txtColor6 : #5D007C;
+
+
+
+// 4 Column per row styling
+@media all and (min-width: 1201px){
+  
+	#navigation-menu{
+    display: flex;
+    width: 100%;
+    height: 4.5vw;
+		padding: 0vw 6vw;
+    align-items: center;
+    justify-content: space-between;
+		background-color: $bgdColor;
+		border-bottom: 0vw solid orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .navlogo{
+      display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: $txtColor5;
+			font-size: 2.5vw;
+      padding: 0.35vw 1.5vw;
+    }
+    .navlogo:hover{
+      color: $txtColor;
+      border: 0.1vw solid $txtColor1;
+      border-radius: 0.2vw;
+    }
+    
+    .navlist{
+      display: flex;
+			align-items: center;
+      height: 100%;
+			list-style: none;
+			justify-content: end;
+      padding-right: 1vw;
+			& a{
+				display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.9vw 1.2vw;
+				color: $txtColor;
+				font-size: 1.5vw;
+      }
+      & a:hover{
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  
+  #navigation-filter{
+    display: flex;
+    align-items: center;
+    height: 2.8vw;
+    width: 100%;
+    padding: 0vw 6.5vw;
+    background-color: $bgdColor1;
+    position: fixed;
+    top: 4.5vw;
+    left: 0;
+    .navfilter{
+      display: flex;
+      align-items: center;
+      & a{
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        padding: 0.3vw 1.2vw;
+        color: $txtColor2;
+        font-size: 1.3vw;
+      }
+      & a:hover{
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  #presentation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: $bgdColor2;
+    margin-top: 7.3vw;
+    .products{
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      padding: 1.6vw 0 0 1.6vw;
+      width: 85%;
+      background-color: $bgdColor8;
+      &__topic{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        height: 40vw;
+        box-shadow: 0vw 0vw 0.6vw $txtColor1;
+        border-radius: 0.35vw;
+        margin: 0 1.6vw 1.6vw 0;
+        text-decoration: none;
+        & img{
+          display: flex;
+          width: 100%;
+          height: 64%;
+          object-fit: cover;
+          border-radius: 0.35vw 0.35vw 0 0;
+          padding: 0.07vw 0.07vw 0 0.07vw;
+        }
+        & h2{
+          display: flex;
+          align-items: center;
+          height: 8%;
+          padding: 0 1.1vw;
+          font-size: 1.8vw;
+          color: $txtColor;
+          background-color: $bgdColor;
+        }
+        & h3{
+          display: flex;
+          align-items: center;
+          height: 16%;
+          color: $bgdColor2;
+          background-color: $bgdColor8;
+          font-size: 1vw;
+          font-weight: 100;
+          padding: 0 1.1vw;
+        }
+        & h4{
+          display: flex;
+          align-items: center;
+          height: 6%;
+          padding: 0 1.1vw;
+          color: $txtColor;
+          background-color: $bgdColor1;
+          font-weight: 300;
+          font-size: 1.5vw;
+          //border-radius: 0 0 0.35vw 0.35vw;
+        }
+        & button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6%;
+          border: none;
+          border-radius: 0 0 0.35vw 0.35vw;
+        }
+        & button:hover{
+          background-color: $bgdColor9;
+          color: $txtColor;
+          border-radius: 0 0 0.35vw 0.35vw;
+        }
+      }
+      &__topic:hover{
+        box-shadow: 0vw 0vw 0.8vw $txtColor4;
+        border-radius: 0 0 0.35vw 0.35vw;
+      }
+    }
+  }
+}
+
+// 3 Column per row styling
+@media all and (max-width: 1200px) and (min-width: 768px){
+  
+	#navigation-menu{
+    display: flex;
+    width: 100%;
+    height: 5vw;
+		padding: 0vw 6vw;
+    align-items: center;
+    justify-content: space-between;
+		background-color: $bgdColor;
+		
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .navlogo{
+      display: flex;
+      align-items: center;
+      height: 100%;
+			text-decoration: none;
+			color: $txtColor5;
+			font-size: 2.85vw;
+      padding: 0 1.2vw;
+      
+    }
+    .navlogo:hover{
+      display: flex;
+      height: 80%;
+      color: $txtColor;
+      border: 0.1vw solid $txtColor1;
+      border-radius: 0.2vw;
+    }
+    
+    .navlist{
+      display: flex;
+			align-items: center;
+      height: 100%;
+			list-style: none;
+			justify-content: end;
+      padding-right: 1vw;
+			& a{
+				display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0vw 1.2vw;
+				color: $txtColor;
+				font-size: 1.8vw;
+      }
+      & a:hover{
+        display: flex;
+        height: 80%;
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  
+  #navigation-filter{
+    display: flex;
+    align-items: center;
+    height: 3.3vw;
+    width: 100%;
+    padding: 0vw 6.5vw;
+    background-color: $bgdColor1;
+    position: fixed;
+    top: 5vw;
+    left: 0;
+    .navfilter{
+      display: flex;
+      align-items: center;
+      & a{
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        padding: 0.3vw 1.2vw;
+        color: $txtColor2;
+        font-size: 1.6vw;
+      }
+      & a:hover{
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  #presentation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: $bgdColor2;
+    margin-top: 8.3vw;
+    .products{
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      padding: 2.8vw 0 0 2.8vw;
+      width: 86%;
+      background-color: $bgdColor8;
+      &__topic{
+        display: flex;
+        flex-direction: column;
+        width: 29.8%;
+        height: 50vw;
+        box-shadow: 0vw 0vw 0.6vw $txtColor1;
+        border-radius: 0.35vw;
+        margin: 0 2.8vw 2.8vw 0;
+        text-decoration: none;
+        & img{
+          display: flex;
+          width: 100%;
+          height: 64%;
+          object-fit: cover;
+          border-radius: 0.35vw 0.35vw 0 0;
+          padding: 0.07vw 0.07vw 0 0.07vw;
+        }
+        & h2{
+          display: flex;
+          align-items: center;
+          height: 8%;
+          padding: 0 1.1vw;
+          font-size: 2.2vw;
+          color: $txtColor;
+          background-color: $bgdColor;
+        }
+        & h3{
+          display: flex;
+          align-items: center;
+          height: 16%;
+          color: $bgdColor2;
+          background-color: $bgdColor8;
+          font-size: 1.33vw;
+          font-weight: 100;
+          padding: 0 1.1vw;
+        }
+        & h4{
+          display: flex;
+          align-items: center;
+          height: 6%;
+          padding: 0 1.1vw;
+          color: $txtColor;
+          background-color: $bgdColor1;
+          font-weight: 300;
+          font-size: 2vw;
+          //border-radius: 0 0 0.35vw 0.35vw;
+        }
+        & button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6%;
+          border: none;
+          border-radius: 0 0 0.35vw 0.35vw;
+          font-size: 1.8vw;
+        }
+        & button:hover{
+          background-color: $bgdColor9;
+          color: $txtColor;
+          border-radius: 0 0 0.35vw 0.35vw;
+        }
+      }
+      &__topic:hover{
+        box-shadow: 0vw 0vw 0.8vw $txtColor4;
+        border-radius: 0 0 0.35vw 0.35vw;
+      }
+    }
+  }
+}
+
+//2 column per row Styling
+@media all and (max-width: 767px) and (min-width: 577px){
+  #navigation-menu{
+    display: flex;
+    width: 100%;
+    height: 6.5vw;
+		padding: 0vw 6vw;
+    align-items: center;
+    justify-content: space-between;
+		background-color: $bgdColor;
+		
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .navlogo{
+      display: flex;
+      align-items: center;
+      height: 100%;
+			text-decoration: none;
+			color: $txtColor5;
+			font-size: 4.5vw;
+      padding: 0 1.2vw;
+      
+    }
+    .navlogo:hover{
+      display: flex;
+      height: 80%;
+      color: $txtColor;
+      border: 0.1vw solid $txtColor1;
+      border-radius: 0.2vw;
+    }
+    
+    .navlist{
+      display: flex;
+			align-items: center;
+      height: 100%;
+			list-style: none;
+			justify-content: end;
+      padding-right: 1vw;
+			& a{
+				display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0vw 1.2vw;
+				color: $txtColor;
+				font-size: 3vw;
+      }
+      & a:hover{
+        display: flex;
+        height: 80%;
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  
+  #navigation-filter{
+    display: flex;
+    align-items: center;
+    height: 4.7vw;
+    width: 100%;
+    padding: 0vw 6.5vw;
+    background-color: $bgdColor1;
+    position: fixed;
+    top: 6.5vw;
+    left: 0;
+    .navfilter{
+      display: flex;
+      align-items: center;
+      & a{
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        padding: 0.3vw 1.2vw;
+        color: $txtColor2;
+        font-size: 2.3vw;
+      }
+      & a:hover{
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  #presentation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: $bgdColor2;
+    margin-top: 11.2vw;
+    .products{
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      padding: 4.5vw 0 0 4.5vw;
+      width: 91%;
+      background-color: $bgdColor8;
+      &__topic{
+        display: flex;
+        flex-direction: column;
+        width: 44.5%;
+        height: 68vw;
+        box-shadow: 0vw 0vw 0.6vw $txtColor1;
+        border-radius: 0.35vw;
+        margin: 0 4.5vw 4.5vw 0;
+        text-decoration: none;
+        & img{
+          display: flex;
+          width: 100%;
+          height: 64%;
+          object-fit: cover;
+          border-radius: 0.35vw 0.35vw 0 0;
+          padding: 0.07vw 0.07vw 0 0.07vw;
+        }
+        & h2{
+          display: flex;
+          align-items: center;
+          height: 8%;
+          padding: 0 1.1vw;
+          font-size: 3.2vw;
+          color: $txtColor;
+          background-color: $bgdColor;
+        }
+        & h3{
+          display: flex;
+          align-items: center;
+          height: 16%;
+          color: $bgdColor2;
+          background-color: $bgdColor8;
+          font-size: 1.73vw;
+          font-weight: 100;
+          padding: 0 1.1vw;
+        }
+        & h4{
+          display: flex;
+          align-items: center;
+          height: 6%;
+          padding: 0 1.1vw;
+          color: $txtColor;
+          background-color: $bgdColor1;
+          font-weight: 300;
+          font-size: 3vw;
+          //border-radius: 0 0 0.35vw 0.35vw;
+        }
+        & button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6%;
+          border: none;
+          border-radius: 0 0 0.35vw 0.35vw;
+          font-size: 2.2vw;
+        }
+        & button:hover{
+          background-color: $bgdColor9;
+          color: $txtColor;
+          border-radius: 0 0 0.35vw 0.35vw;
+        }
+      }
+      &__topic:hover{
+        box-shadow: 0vw 0vw 0.8vw $txtColor4;
+        border-radius: 0 0 0.35vw 0.35vw;
+      }
+    }
+  }
+}
+// Mobile version styling
+@media all and (max-width: 576px){
+  #navigation-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 22vw;
+		padding: 0vw 0vw;
+    justify-content: center;
+    align-items: center;
+		
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .navlogo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+			text-decoration: none;
+      height: 60%;
+			color: $txtColor5;
+			font-size: 12vw;
+      background-color: $bgdColor;
+     
+    }
+    .navlogo:hover{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60%;
+      color: $txtColor;
+      border: 0.1vw solid $txtColor1;
+      border-radius: 0.8vw;
+    }
+    
+    .navlist{
+      display: flex;
+			align-items: center;
+      justify-content: space-between;
+      height: 40%;
+      width: 100%;
+			list-style: none;
+      background-color: $bgdColor1;
+			& a{
+				display: flex;
+        align-items: center;
+        text-decoration: none;
+				color: $txtColor;
+				font-size: 5.5vw;
+        padding: 0 2.5vw;
+      }
+      & a:hover{
+        display: flex;
+        height: 80%;
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.8vw;
+      }
+    }
+  }
+  
+  #navigation-filter{
+    display: flex;
+    align-items: center;
+    height: 6.7vw;
+    width: 100%;
+    padding: 0vw 0vw;
+    background-color: $bgdColor2;
+    position: fixed;
+    top: 22vw;
+    left: 0;
+    .navfilter{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 6vw;
+      & a{
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        color: $txtColor2;
+        font-size: 4.2vw;
+      }
+      & a:hover{
+        color: $txtColor;
+        border: 0.1vw solid $txtColor1;
+        border-radius: 0.2vw;
+      }
+    }
+  }
+  #presentation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: $bgdColor2;
+    margin-top: 28.7vw;
+    .products{
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      padding: 6.9vw 0 0 6.9vw;
+      width: 99%;
+      background-color: $bgdColor8;
+      &__topic{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        height: 130vw;
+        box-shadow: 0vw 0vw 0.6vw $txtColor1;
+        border-radius: 1.5vw;
+        margin: 0 0vw 6.9vw 0;
+        text-decoration: none;
+        & img{
+          display: flex;
+          width: 100%;
+          height: 64%;
+          object-fit: cover;
+          border-radius: 1.5vw 1.5vw 0 0;
+          padding: 0.07vw 0.07vw 0 0.07vw;
+        }
+        & h2{
+          display: flex;
+          align-items: center;
+          height: 8%;
+          padding: 0 1.1vw;
+          font-size: 5vw;
+          color: $txtColor;
+          background-color: $bgdColor;
+        }
+        & h3{
+          display: flex;
+          align-items: center;
+          height: 16%;
+          color: $bgdColor2;
+          background-color: $bgdColor8;
+          font-size: 3.8vw;
+          font-weight: 100;
+          padding: 0 1.1vw;
+        }
+        & h4{
+          display: flex;
+          align-items: center;
+          height: 6%;
+          padding: 0 1.1vw;
+          color: $txtColor;
+          background-color: $bgdColor1;
+          font-weight: 300;
+          font-size: 5.5vw;
+          //border-radius: 0 0 0.35vw 0.35vw;
+        }
+        & button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6%;
+          border: none;
+          border-radius: 0 0 0.35vw 0.35vw;
+          font-size: 4.8vw;
+        }
+        & button:hover{
+          background-color: $bgdColor9;
+          color: $txtColor;
+          border-radius: 0 0 0.35vw 0.35vw;
+        }
+      }
+      &__topic:hover{
+        box-shadow: 0vw 0vw 0.8vw $txtColor4;
+        border-radius: 0 0 0.35vw 0.35vw;
+      }
+    }
+  }
+}
